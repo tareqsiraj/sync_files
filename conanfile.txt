@@ -1,0 +1,7 @@
+[requires]
+Clang/7.0.0@tareqsiraj/stable
+CMake/3.12.4@tareqsiraj/stable
+
+[generators]
+virtualenv
+cmake
