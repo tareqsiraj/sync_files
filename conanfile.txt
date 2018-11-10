@@ -2,6 +2,7 @@
 Clang/7.0.0@tareqsiraj/stable
 CMake/3.12.4@tareqsiraj/stable
 Boost/1.68.0@tareqsiraj/stable
+spdlog/1.2.1@tareqsiraj/stable
 
 [generators]
 virtualenv

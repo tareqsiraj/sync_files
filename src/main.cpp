@@ -1,4 +1,12 @@
+#include "config.hpp"
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wshadow-field"
 #include <boost/program_options.hpp>
+#pragma clang diagnostic pop
+
+#include <spdlog/spdlog.h>
+#include <spdlog/sinks/stdout_color_sinks.h>
 
 #include <iostream>
 
@@ -19,6 +27,9 @@ int main(int argc, const char* argv[]) {
     std::cout << desc << "\n";
     return 0;
   }
+
+  auto console = spdlog::stdout_color_mt(sync_files::CONSOLE_LOGGER);
+  console->info("foobar");
 
   return 0;
 }
